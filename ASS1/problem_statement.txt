@@ -1,0 +1,27 @@
+Assignment A:
+1. Create a single HTML page (remember what makes a page):
+a. Your page should have:
+i. Your name
+ii. A sentence about yourself
+iii. Your goal for this diploma course
+b. Your page should use the following tags:
+i. <b>
+ii. <p>
+iii. <br>
+iv. <h1> … <h6>
+v. List
+c. Your page should not use the following tags:
+i. Table
+ii. Forms
+2. Using table tags, building a Tabulated data page. A single page with
+tabled data.
+a. The content should be A - Z, each alphabet should be in a single
+cell
+3. Using Forms, create a contact page:
+a. Fields:
+i. Name
+ii. Email
+iii. Message
+iv. Priority (dropdown)
+b. Your form should have a submit button
+c. Your form should have basic HTML Validation
