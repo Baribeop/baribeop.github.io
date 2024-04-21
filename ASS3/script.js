@@ -5,17 +5,22 @@ function scrambleText() {
     replacementCharacter
 
 
-    // let content = prompt('enter text')
-    // let scrambleWord = prompt('enter scramble word')
+
     let words = String(originalText).trim()
     let formattedWord = words.split(" ")
-    // let characters = prompt('enter characters')
+
     
     
-    function findTargetWord(wordsToScramble){
-    let modifiedWords = (wordsToScramble.trim()).split(' ',)
-    return modifiedWords
-    }
+
+
+    function findTargetWord(scramblewords){
+        let modifiedWords = (scramblewords.trim()).split(' ',)
+        const lowerCasewords = []
+        modifiedWords.forEach(word => {lowerCasewords.push(word.toLowerCase())
+            
+        });
+        return lowerCasewords
+        }
     
     
     
@@ -40,7 +45,7 @@ function scrambleText() {
         let replacedWordArray = []
         let totalScrambledCharacters = 0
         for (let word of formattedWord) {
-            if (targetWordList.includes(word)) { 
+            if (targetWordList.includes(word.toLowerCase())) { 
                 var wordLength = word.length
                 totalScrambledCharacters  += wordLength
                 
@@ -53,7 +58,7 @@ function scrambleText() {
             
     }    
     // console.log(totalScrambledCharacters)
-    document.getElementById('totalScrambledCharacters').innerHTML = `Total scrambled characters:${totalScrambledCharacters}`;
+    document.getElementById('scrambledText').innerHTML = `Total scrambled characters:${totalScrambledCharacters}`;
     return replacedWordArray.join(' ')
     };
     
@@ -63,7 +68,6 @@ function scrambleText() {
     document.getElementById('scrambledText').innerHTML = `Scrambled text: ${targetWordInList(targetWordList, findTargetWord)}`;
     document.getElementById('totalScannedWord').innerHTML = `Total scanned word: ${formattedWord.length}`;
     document.getElementById('totalMatchedWord').innerHTML = `Total matched word: ${targetWordList.length}`;
-    
     
     // const scrambledText = targetWordInList(targetWordList, findTargetWord);
     // console.log(scrambledText);
