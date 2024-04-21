@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title> REDACTR APP</title>
+</head>
+<body> 
+        <h2>REDACTR APP | Text scrambler</h2>
+        <hr>
+        <div class="container">
+            <h3>Scrambler some words</h3>
+            <label for="originalText">Original text</label>
+            <textarea name="content"  id="originalText" placeholder="Enter your text here..." cols="30" rows="10"></textarea> 
+          
+            <label for="wordsToScramble">Scramble Word(s)</label>
+            <input type="text" id="wordsToScramble" required placeholder="Enter words to scramble (separated by space)">
+       
+            <label for="replacementCharacter">Replacement Character</label>
+            <input id="replacementCharacter"  type="text" placeholder="Enter a single character that will replace each letter of the words here, example is * " required>  <br>
+            
+            <button onclick="scrambleText()">Redactr Now</button>
+            <!-- <hr> -->
+            <!-- <div id="originalText">Original text:</div> -->
+            <div id="scrambledText"></div>
+            <div id="totalScannedWord"></div>
+            <div id="totalMatchedWord"></div>
+            <div id="totalScrambledCharacters"></div>
+        </div>
+      
+        <script src="script.js"></script>
+</body>
+
+</html>
+
+
