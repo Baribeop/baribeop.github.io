@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Book 1",
+    "author": "Author 1",
+    "genre": "Fiction",
+    "available": true
+  },
+  {
+    "id": 2,
+    "title": "Book 2",
+    "author": "Author 2",
+    "genre": "Non-fiction",
+    "available": true
+  },
+  {
+    "id": 3,
+    "title": "Book 3",
+    "author": "Author 3",
+    "genre": "Science",
+    "available": false
+  },
+  {
+    "title": "New Book",
+    "author": "New Author",
+    "genre": "Fiction",
+    "available": true
+  }
+]
