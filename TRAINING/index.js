@@ -176,7 +176,8 @@ function saveBooks() {
     fs.writeFileSync(path.join(__dirname, 'books.json'), JSON.stringify(books, null, 2));
 }
 
-const PORT = 3000;
+// const PORT = 3000;
+const PORT = process.env.PORT || 3030;
 server.listen(PORT, () => {
 console.log(`Server running on port ${PORT}`);
 
